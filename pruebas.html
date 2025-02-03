@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Parallax</title>
+    <style>
+        /* Estilos generales */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sección con efecto parallax */
+        .parallax {
+            background-image: url(/PROYECTO_EMPRESA/imagenes/117-como-elegir-muebles-oficina-para-mejorar-productividad.png);/* Cambia la URL de la imagen */
+            height: 100vh; /* Altura de la sección */
+            background-attachment: fixed; /* Fija la imagen al fondo */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        /* Secciones normales */
+        .content {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parallax">
+        🌟 Bienvenido a mi web con efecto Parallax 🌟
+    </div>
+
+    <div class="content">
+        <p>Este es un texto de ejemplo en una sección normal.</p>
+        <p>Desplázate hacia abajo para ver el efecto parallax en acción.</p>
+    </div>
+
+    <div class="parallax">
+        📸 Otra sección con efecto Parallax
+    </div>
+
+    <div class="content">
+        <p>Final de la página con contenido normal.</p>
+    </div>
+
+</body>
+</html>
