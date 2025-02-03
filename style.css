@@ -12,7 +12,7 @@ body {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: #333;
+    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
@@ -26,33 +26,6 @@ body {
     height: 50px;
     max-height: 100%;
     margin-left: 15px;
-}
-
-.nav-links {
-    margin-left: auto; /* Empuja los links a la derecha */
-}
-
-.nav-links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-links ul li {
-    margin-left: 20px;
-}
-
-.nav-links ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.nav-links ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
 }
 
 .home header{
@@ -77,7 +50,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
     height: 100vh;
     display: flex;
@@ -90,4 +63,88 @@ header {
     font-size: 12px;
     font-weight: lighter;
 }
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-links ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.info_1{
+    background-color: white
+}
+
+.info_2{
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 50%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.row img {
+    width: 48%;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+.large-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: span 2; 
+}
+
 
