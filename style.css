@@ -51,11 +51,11 @@ p {
 }
 
 .contact header {
-    background-image: url(/imagenes/manos.jpg);
+    background-image: url(/imagenes/hands.jpg);
 }
 
 .about header {
-    background-image: url(/imagenes/hombre.jpg);
+    background-image: url(/imagenes/kitchen.jpg);
 }
 
 header {
@@ -65,7 +65,7 @@ header {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -110,9 +110,16 @@ header {
 .wall {
     width: 100%;
     height: 300px;
-    background-image: url('/imagenes/bakery.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.home .wall {
+    background-image: url('/imagenes/bakery.jpg');
+}
+
+.about .wall {
+    background-image: url(/imagenes/fire.jpg);
 }
 
 .text-columns {
@@ -152,6 +159,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .image-container {
@@ -197,11 +205,14 @@ header {
 }
 
 .info_1 {
-    background-color: #fefafb;
+    background-color: #231c23;
+    color: #fefafb;
 }
 
 .info_2 {
-    background-color: pink;
+    background-color: #f91865;
+    color: #fefafb;
+    padding: 1%;
 }
 
 .container {
