@@ -48,7 +48,7 @@ p {
 }
 
 .promo header {
-    background-image: url(/imagenes/amor.jpg);
+    background-image: url(/imagenes/black-friday.jpg);
 }
 
 .contact header {
@@ -127,9 +127,24 @@ header {
     background-image: url(/imagenes/vegetables.jpg);
 }
 
+.promo .wall{
+    background-image: url(/imagenes/streamer.jpg);
+}
+
 .text-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #231c23;
+    color: #fefafb;
+    padding: 20px;
+    text-align: center;
+    min-height: 300px;
+}
+
+.text-columns-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     background-color: #231c23;
     color: #fefafb;
@@ -220,6 +235,42 @@ header {
     opacity: 0.7;
     width: 90%;
     max-width: 250px;
+}
+.collage2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 15px; /* Espacio entre las imágenes */
+    padding: 20px;
+}
+
+.collage2-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collage2-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.collage2-container:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .collage2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .collage2 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .info_1 {
