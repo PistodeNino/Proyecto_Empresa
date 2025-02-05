@@ -1,8 +1,11 @@
-window.addEventListener("scroll", function() {
-    let topBar = document.querySelector(".top-bar");
-    if (window.scrollY > 50) {
-        topBar.classList.add("scrolled");
-    } else {
-        topBar.classList.remove("scrolled");
-    }
-});
+let slideIndex = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-slide img');
+    const totalSlides = slides.length;
+    
+    slideIndex = (slideIndex + direction + totalSlides) % totalSlides;
+    const carousel = document.querySelector('.carousel-slide');
+    carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
